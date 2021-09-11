@@ -1,0 +1,27 @@
+#
+# Parameter file for the 2D Wave equation run
+# Sudarshan Neopane, June 2021
+# parameters are read in through get_param.f90 file
+
+# Domain length in x and y direction
+Lx 	= 	10.0
+Ly	=	10.0
+# resolution in x and y direction
+dx	=	0.05 
+dy	=	0.05
+# simulation time
+tfinal	=	3.0
+# speed of the wave
+C	=	1
+# kourant value
+cfl	=	0.5
+# position of source in x and y grid
+sx	=	5.0
+sy	=	5.0
+# frequency of the output file
+filefrequency	=	5
+# boundary condition: reflecting = 0, absorbing = 1
+xl_boundary	=	1
+xr_boundary	=	1
+yl_boundary	=	1
+yr_boundary	=	1
